@@ -6,7 +6,6 @@
   "author": {
     "name": "hxYuki"
   },
-  
   "license": "MIT",
   "engines": {
     "vscode": "^1.71.0"
@@ -24,7 +23,24 @@
         "command": "smart-punctuator.convert",
         "title": "Convert"
       }
-    ]
+    ],
+    "configuration": {
+      "title": "Smart Punctuator",
+      "properties": {
+        "smartPunctuator.includeLanguage": {
+          "type": "array",
+          "default": [
+            "markdown"
+          ],
+          "description": "in which language you want to use this convertion"
+        },
+        "smartPunctuator.convertOnSave": {
+          "type": "boolean",
+          "default": true,
+          "description": "if to trigger convert when saving files"
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
