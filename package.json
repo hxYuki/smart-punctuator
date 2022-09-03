@@ -2,10 +2,11 @@
   "name": "smart-punctuator",
   "displayName": "Smart Punctuator",
   "description": "“智能”转换文档中的中文标点符号",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": {
     "name": "hxYuki"
   },
+  "icon": "icon.png",
   "license": "MIT",
   "engines": {
     "vscode": "^1.51.0"
@@ -18,12 +19,6 @@
   ],
   "main": "./out/extension.js",
   "contributes": {
-    "commands": [
-      {
-        "command": "smart-punctuator.convert",
-        "title": "Convert"
-      }
-    ],
     "configuration": {
       "title": "Smart Punctuator",
       "properties": {
@@ -34,10 +29,10 @@
           ],
           "description": "in which language you want to use this convertion"
         },
-        "smartPunctuator.convertOnSave": {
+        "smartPunctuator.convertOnType": {
           "type": "boolean",
           "default": true,
-          "description": "if to trigger convert when saving files"
+          "description": "if to trigger convert when typing"
         }
       }
     }

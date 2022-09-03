@@ -1,9 +1,11 @@
 # Change Log
 
-All notable changes to the "smart-punctuator" extension will be documented in this file.
+<!-- ## [Unreleased]: -->
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## [0.1.0] - 2022-09-03
 
-## [Unreleased]
+初次提交
+Initial release
 
-- Initial release
+- 在输入时转换标点符号
+  Converting punctuation on typing
